@@ -26,13 +26,17 @@ body {
   width:inherit;
   height: inherit;    
   margin-top: 45%;  
-  position:fixed;
-  margin-right: -60%;    
+  position:relative;
+  margin-right: -60%; 
+  clear: both;
+    
 }  
     
 .mybuttons{
     top:auto;
     margin: 10px auto;
+    clear: both;
+
 }    
 }
 
@@ -41,14 +45,18 @@ body {
   width:inherit;
   height: inherit;    
   margin-top: 45%;  
-  position:fixed;
+  position:relative;
   left: 18%;
+    clear: both;
+
 }  
     
 .mybuttons{
     top:15%;
     left: 35%;
     margin: auto;
+    clear: both;
+
 }    
 }
 
