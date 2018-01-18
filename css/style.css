@@ -25,16 +25,17 @@ body {
 .mygif{
   width:inherit;
   height: inherit;    
-  margin-top: 45%;  
+  margin-top: 5%;  
   position:relative;
-  margin-right: -60%; 
   clear: both;
+  z-index: -1000;
+  padding-left: 25%;    
     
 }  
     
 .mybuttons{
-    top:auto;
-    margin: 10px auto;
+    width:auto;
+    top:5%;
     clear: both;
 
 }    
@@ -47,7 +48,6 @@ body {
   margin-top: 45%;  
   position:relative;
   left: 18%;
-    clear: both;
 
 }  
     
