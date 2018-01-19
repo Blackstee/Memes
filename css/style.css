@@ -172,7 +172,7 @@ a{
 .mybuttons{
   position: absolute;
   right: 15%;
-  top: 20%;
+  top: 25%;
 }
 .mybuttons{
   animation:  slideOutUp 0.9s infinite;
@@ -200,7 +200,7 @@ a{
 .mybuttons{
   position: absolute;
   right: 25%;
-  top: 15%;
+  top: 17%;
 }  
 }
 
