@@ -1,0 +1,82 @@
+!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+  <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <link href="css/style.css" rel="stylesheet" media="all">      
+</head>
+<body>
+  
+<div id="app">
+<v-app>   
+  <template>
+
+    <v-toolbar color="cyan" dark fixed app>
+      <v-toolbar-title class="text-xs-center">Memes rate</v-toolbar-title>
+    </v-toolbar>
+    <v-content>
+      <v-container fluid fill-height>
+        <v-layout justify-center align-center>
+          <template>
+  <v-layout column>
+    <v-flex xs12 md10 offset-xs1>
+      <v-toolbar color="indigo" dark>
+        <v-toolbar-title>Click on top meme!</v-toolbar-title>
+        <v-spacer></v-spacer>
+      </v-toolbar>
+         
+      <v-container fluid grid-list-md class="grey lighten-4">
+        <v-layout row wrap>
+          <v-flex
+            v-for="card in cards"
+            :key="card.title"
+          >
+            <v-card>
+              <v-card-media
+                :src="card.src"
+                height="70%"
+              >
+              </v-card-media>
+              <v-card-actions class="white">
+                <v-spacer></v-spacer>
+                <v-btn icon>
+                  <v-icon>favorite</v-icon>
+                </v-btn>
+              </v-card-actions> 
+            </v-card>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </v-flex>
+  </v-layout>
+</template>
+        </v-layout>
+      </v-container>
+    </v-content>
+    <v-footer color="cyan" app>
+      <v-spacer></v-spacer>
+      <span class="white--text">KIVI team for Int20h 2018</span>
+    </v-footer>
+</template> 
+    </v-app>
+    </div>
+ 
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
+    
+  <script>
+   
+    new Vue({ 
+        el: '#app',
+        data: {
+        cards: [
+        { src: 'http://bipbap.ru/wp-content/uploads/2017/04/187604chan1309313071950.jpg' },
+        { src: 'http://bipbap.ru/wp-content/uploads/2017/04/187604chan1309313071950.jpg' },   
+            ]}
+    })
+    
+    
+  </script>
+</body>
+</html>

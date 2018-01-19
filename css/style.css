@@ -20,7 +20,22 @@ body {
   position: absolute;
   right: 15%;
   top: 35%;
+  animation-direction: alternate;
+  animation-duration: 0.9s;
 }
+
+.mybutton{
+
+  animation-direction: alternate;
+  animation-duration: 0.8s;
+}
+
+.mybutton2{
+
+  animation-direction: alternate;
+  animation-duration: 0.9s;
+}
+
 @media (max-width: 350px) {
 .fixmenu{
     position: fixed;
@@ -91,6 +106,7 @@ body {
     top:5%;
     clear: both;
     left:40%;
+    
 
 }   
   
@@ -148,4 +164,8 @@ body {
   right: 25%;
   top: 15%;
 }  
+}
+
+v-footer{
+position = "fixed"
 }
