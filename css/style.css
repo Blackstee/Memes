@@ -1,8 +1,11 @@
 body, html {
   height: 100%;
+  width:100%;    
 }
-
-
+body{
+margin:0;
+padding:0;
+}
 body {
   background-color:#3e3e3e;
 }
@@ -33,7 +36,13 @@ a{
   top: 5%;
 }
 
+p{
+    font-size: 50;
+}
 
+.choice{
+    width: 100%;
+}
 
 
 
@@ -62,7 +71,18 @@ a{
     left:0%;
     animation: none;
 
-}    
+} 
+html{
+    font-size: 10px;
+    }    
+.gallery li img {
+   width: 32rem;
+    }
+.gallery li {
+    display: block;
+    width:100%;
+}   
+
 }
 
 @media (max-width: 450px) and (min-width: 350px) {
@@ -88,8 +108,18 @@ a{
     left:5%;
     animation: none;
 
-}    
-   
+} 
+
+.gallery li img {
+   width: 310px;
+    height: auto;
+    }
+.gallery li {
+  min-height: auto;
+  width: 310px;
+  height:auto;
+}   
+ 
 }
 
 @media (max-width: 800px) and (min-width: 450px) {
@@ -114,7 +144,10 @@ a{
     animation: none;
     
 
-}   
+}  
+.gallery li img {
+   width: 551px;
+    }      
   
 }
 
@@ -141,7 +174,10 @@ a{
     clear: both;
     left:60%;
 
-}    
+}  
+.gallery li img {
+   width: 551px;
+    }    
 }
 
 
@@ -160,6 +196,9 @@ a{
   animation:  slideInLeft 0.9s infinite;
   animation-direction: alternate;
 }
+.gallery li img {
+   width: 551px;
+    }       
 }
 
 @media (min-width: 1440px) {
@@ -187,7 +226,10 @@ a{
 .mybutton2{
   animation:  slideInLeft 0.9s infinite;
   animation-direction: alternate;
-}    
+}  
+.gallery li img {
+   width: 551px;
+    }       
 }
 
 @media (min-width: 2560px) {
@@ -202,23 +244,24 @@ a{
   right: 25%;
   top: 17%;
 }  
+.gallery li img {
+   width: 551px;
+    }       
 }
 
 
 
 .gallery {
-  margin-top: 70px;
+  margin-top: 30px;
   text-align: center;
   width: 100%;
   padding: 2px;
 }
 .gallery li {
-  width: 571px;
   min-height: 100%;
   text-align: center;
-  height: 455px;
   position: relative;
-  margin: 0 auto;
+  margin: 0 0;
   display: inline-block;
   overflow: hidden;
   background-color: transparent;
@@ -311,7 +354,6 @@ a{
 }
 .gallery li img {
   display: block;
-  width: 551px;
   margin: 0 auto;
   display: inline-block;
   text-align: center;
@@ -329,100 +371,3 @@ a{
   transition-duration: 0.4s;
 }
 
-
-.galleryrating {
-  margin-top: 70px;
-  text-align: center;
-  width: 100%;
-  padding: 2px;
-}
-.galleryrating li {
-  width: 421px;
-  min-height: 100%;
-  text-align: center;
-  height: 255px;
-  position: relative;
-  margin: 0 auto;
-  display: inline-block;
-  overflow: hidden;
-  background-color: transparent;
-}
-.galleryrating li:nth-child(2) img {
-  margin: 0;
-  display: inline-block;
-  float: right;
-}
-.galleryrating li .name {
-  text-decoration: none;
-  text-transform: uppercase;
-  text-shadow: rgba(0, 0, 0, 0.7) 1px 1px 5px;
-  color: white;
-  font-weight: lighter;
-  font-size: 40px;
-  letter-spacing: .1em;
-  position: absolute;
-  display: block;
-  top: 40%;
-  left: 0;
-  text-align: center;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-}
-.galleryrating li .name .title {
-  display: block;
-  text-transform: none;
-  font-style: italic;
-  font-size: 40%;
-  color: rgba(255, 255, 255, 0.7);
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -moz-transition-delay: 0.2s;
-  -o-transition-delay: 0.2s;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-  -moz-transition-duration: 0.9s;
-  -o-transition-duration: 0.9s;
-  -webkit-transition-duration: 0.9s;
-  transition-duration: 0.9s;
-}
-.galleryrating li .name {
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-  opacity: 1;
-  -moz-transform: scale(1.09, 1.09);
-  -ms-transform: scale(1.09, 1.09);
-  -webkit-transform: scale(1.09, 1.09);
-  transform: scale(1.09, 1.09);
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.6s;
-  -o-transition-duration: 0.6s;
-  -webkit-transition-duration: 0.6s;
-  transition-duration: 0.6s;
-}
-
-.galleryrating li img {
-  display: block;
-  width: 421px;
-  margin: 0 auto;
-  display: inline-block;
-  text-align: center;
-  background-position: top top;
-  -webkit-filter: grayscale(0.4) blur(2px);
-  filter: grayscale(0.4) blur(2px);
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.5;    
-}
-
-.galleryrating li .title {
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-  opacity: 1;
-}
