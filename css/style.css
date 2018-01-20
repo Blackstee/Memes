@@ -22,6 +22,8 @@ a{
   position: absolute;
   right: 45%;
   top: 7%;
+  animation: zoomIn 3s;
+
 }
 .mybuttons{
   position: absolute;
@@ -52,23 +54,27 @@ p{
 .fixmenu{
     position: fixed;
     
-}        
-.mygif{
-  width:inherit;
-  height: inherit;    
-  margin-top: 5%;  
+} 
+  
+.mygif{   
+  margin-top: 70%;  
   position:relative;
   clear: both;
   z-index: -1000;
-  padding-left: 25%;    
+  padding-left: 55%;   
+  padding-right: 5%;    
     
 }  
+.mygif img{
+   max-width:500px;
+   width:200%; 
+    }    
     
 .mybuttons{
     width:100%;
     top:5%;
     clear: both;
-    left:0%;
+    left:2%;
     animation: none;
 
 } 
@@ -90,22 +96,25 @@ html{
     position: fixed;
     
 }     
-.mygif{
-  width:inherit;
-  height: inherit;    
-  margin-top: 5%;  
+.mygif{   
+  margin-top: 60%;  
   position:relative;
   clear: both;
   z-index: -1000;
-  padding-left: 31%;    
+  padding-left: 55%;   
+  padding-right: 0%;    
     
 }  
+.mygif img{
+   max-width:500px;
+   width:160%; 
+    }    
     
 .mybuttons{
     width:100%;
     top:5%;
     clear: both;
-    left:5%;
+    left:12%;
     animation: none;
 
 } 
