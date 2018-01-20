@@ -1475,7 +1475,7 @@
 
 @keyframes slideInLeft {
   from {
-    transform: translate3d(-5%, 0, 0);
+    transform: translate3d(-3.5%, 0, 0);
     visibility: visible;
   }
 
@@ -1540,7 +1540,7 @@
 
   to {
     visibility: hidden;
-    transform: translate3d(-5%, 0, 0);
+    transform: translate3d(-3.5%, 0, 0);
   }
 }
 
@@ -1555,7 +1555,7 @@
 
   to {
     visibility: hidden;
-    transform: translate3d(5%, 0, 0);
+    transform: translate3d(3.5%, 0, 0);
   }
 }
 
@@ -1570,7 +1570,7 @@
 
   to {
     visibility: hidden;
-    transform: translate3d(0, -5%, 0);
+    transform: translate3d(0, -3.5%, 0);
   }
 }
 
