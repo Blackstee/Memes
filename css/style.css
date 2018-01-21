@@ -1,3 +1,4 @@
+
 body, html {
   height: 100%;
   width:100%;    
@@ -14,9 +15,29 @@ a{
     font-size: 50;
 }
 
+
+.letter {
+    text-align: center;
+    color: white;
+    font-family: "Robotfont";
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#example{padding:0px 0px 0px 100px;display:none;}
+#example .new{opacity: 0;}
+#example .div_opacity{
+  -webkit-transition: opacity .1s ease-in-out;
+  -moz-transition: opacity .1s ease-in-out;
+  -ms-transition: opacity .1s ease-in-out;
+  -o-transition: opacity .1s ease-in-out;
+  transition: opacity .1s ease-in-out;
+  opacity: 1;}
+
 .mygif .mybuttons{
     display: block;
 }
+
 
 .mygif{
   position: absolute;
@@ -46,7 +67,9 @@ p{
     width: 100%;
 }
 
-
+li{
+    animation: zoomIn 3s;
+}
 
 
 
@@ -87,7 +110,10 @@ html{
 .gallery li {
     display: block;
     width:100%;
-}   
+}  
+.text{
+    display: none;
+}    
 
 }
 
@@ -127,7 +153,10 @@ html{
   min-height: auto;
   width: 310px;
   height:auto;
-}   
+} 
+.text{
+    display: none;
+}     
  
 }
 
@@ -157,7 +186,10 @@ html{
 .gallery li img {
    width: 551px;
     }      
-  
+
+.text{
+    display: none;
+}     
 }
 
 
@@ -186,7 +218,10 @@ html{
 }  
 .gallery li img {
    width: 551px;
-    }    
+    } 
+.text{
+    display: none;
+}    
 }
 
 
@@ -255,7 +290,10 @@ html{
 }  
 .gallery li img {
    width: 551px;
-    }       
+    }  
+ .letter{
+    font-size: 40px;
+    }    
 }
 
 
@@ -382,3 +420,12 @@ html{
   transition-duration: 0.4s;
 }
 
+
+@font-face {
+ 
+font-family: "Robotfont"; 
+
+src: url("../fonts/ARCADECLASSIC.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
