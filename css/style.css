@@ -11,19 +11,13 @@ body {
   background-color:#3e3e3e;
 }
 
-#confetti{
-	height: 100%;
-	left: 0px;
-	position: fixed;
-	top: 0px;
-	width: 100%;
-	z-index: -1000000;
-}
 a{
     font-size: 50;
 }
 
-
+.tada{
+    animation-delay: 2s;
+}
 
 .mygif .mybuttons{
     display: block;
@@ -525,4 +519,3 @@ vertical-align: middle;
     height :150px;
     transform: rotate(90deg);
 }
-
