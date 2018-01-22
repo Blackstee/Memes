@@ -26,31 +26,13 @@
       <div class="mygif">
        <img  src="images/animal.gif" > 
       </div>
-     </div>
-     <div class="text">
-     <div id="example" class="letter">
-     Hi,  guys. It's  "KIVI"  team  for  INT20h  2018.  We  are  back:)  Enjoy   memes:P</div>   
-     </div>     
+     </div>   
      <script type="text/javascript">
       $(document).ready(function() {
         $("body").css("display", "none");
         $("body").fadeIn(800);
        });
          
-      $(document).ready(function(){
-      $.fn.animate_Text = function() {
-       var string = this.text();
-       return this.each(function(){
-         var $this = $(this);
-        $this.html(string.replace(/./g, '<span class="new">$&</span>'));
-        $this.find('span.new').each(function(i, el){
-        setTimeout(function(){ $(el).addClass('div_opacity'); }, 40 * i);
-       });
-      });
-     };
-     $('#example').show();
-     $('#example').animate_Text();
-     });
 </script>
  </body>
 </html>
